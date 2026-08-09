@@ -343,3 +343,7 @@ Material Iconsを使用する場合は、SVGパスとして埋め込んでくだ
 - `docs/research/blog-diagram-design-patterns.md`: デザインパターン研究
 - Material Icons: https://fonts.google.com/icons
 - WCAG Guidelines: https://www.w3.org/WAI/WCAG21/quickref/
+
+## 依存関係
+
+依存関係なし。SVGはテキストとしてRead/Writeツールのみで直接記述するため、追加のソフトウェア・ライブラリ・他スキルは不要（PNG変換したい場合に `svg-to-png` 等の関連スキルを任意で使うことはあるが、本スキル自体の実行に必須ではない）。

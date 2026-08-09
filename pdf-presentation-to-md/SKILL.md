@@ -137,3 +137,10 @@ diff /tmp/refs.txt /tmp/files.txt && echo OK
 - 未翻訳の外国語文が本文に残っていないか
 
 数ページをサンプリングして画像と本文を見比べ、内容の写し漏れ・誤訳がないかも確認する。
+
+## 依存関係
+
+- **ソフトウェア**: Python 3、poppler-utils（`pdftoppm` / `pdftotext` / `pdfinfo`）
+- **Pythonライブラリ**: なし（`scripts/convert_pages.py` は追加のpip依存なしで動作）
+- **JSライブラリ**: なし
+- **他のスキル**: なし

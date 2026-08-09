@@ -223,3 +223,11 @@ abs ページや PDF を arxiv.org から `web_fetch` する。読んだ範囲�
   URL（Semantic Scholar の abs ページ等）を渡す → 「arxiv 限定」原則に反する。
 - 同じ論文に `answer_pdf_queries` を質問ごとに何度も呼び直す → 質問はまとめて
   1回に詰める（複数質問はほぼ追加コストがかからないとツール側で説明されている）。
+
+## 依存関係
+
+- **ソフトウェア**: Python 3（フォールバック経路 `scripts/arxiv_fallback.py` を使う場合のみ必要）
+- **Pythonライブラリ**: `arxiv`（[lukasschwab/arxiv.py](https://github.com/lukasschwab/arxiv.py)）、`requests`、`pypdf`（いずれもフォールバック使用時のみ。`pip install arxiv requests pypdf`）
+- **JSライブラリ**: なし
+- **他のスキル**: なし
+- **その他**: alphaXiv MCPコネクタ（`discover_papers`/`get_paper_content`/`answer_pdf_queries`等）が使える環境ではそちらを優先するため、上記Pythonライブラリは必須ではない（コネクタが使えない場合のフォールバック用）。

@@ -175,3 +175,10 @@ diff /tmp/refs.txt /tmp/files.txt && echo OK
 
 最後に数ページをサンプリングしてページ画像と本文を見比べ、段落の写し漏れ・
 図の位置ずれ・誤訳がないかを確認する。
+
+## 依存関係
+
+- **ソフトウェア**: Python 3、poppler-utils（`pdftoppm` / `pdftotext` / `pdfinfo`）
+- **Pythonライブラリ**: `pdfplumber`、`Pillow`
+- **JSライブラリ**: なし
+- **他のスキル**: なし

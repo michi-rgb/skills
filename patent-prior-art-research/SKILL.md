@@ -101,3 +101,10 @@ JPO(日本国特許庁、Japan Patent Office)が提供するJ-PlatPat(特許情�
 - **次のアクション**: 出願を検討する場合は弁理士(特許事務所)への相談を推奨する旨
 
 詳しいテンプレートは `references/report_template.md` を参照。
+
+## 依存関係
+
+- **ソフトウェア**: なし
+- **Pythonライブラリ / JSライブラリ**: なし
+- **他のスキル**: なし
+- **その他**: web_search / web_fetch などの標準ツールを使用

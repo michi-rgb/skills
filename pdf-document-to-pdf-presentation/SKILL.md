@@ -205,3 +205,11 @@ python3 <skill>/scripts/make_pdf.py plan.json /path/out.pdf --thumbs
 - **色は6桁HEX・`#`なし**（スクリプト側の制約）。プランで色は指定しない。
 - 生成が失敗したら `make_pdf.py` の代わりに `build_deck.js` を単体実行すると
   エラー箇所（どのスライドか）が出る。
+
+## 依存関係
+
+- **ソフトウェア**: Python 3、Node.js、poppler-utils（`pdftoppm` / `pdftotext` / `pdfinfo`）、LibreOffice（`soffice`）、Noto Sans CJK JP フォント
+- **Pythonライブラリ**: `pdfplumber`、`Pillow`
+- **JSライブラリ**: `pptxgenjs`（グローバルインストール想定。`build_deck.js` が `require` で読み込む）
+- **他のスキル**: なし
+- **備考**: SKILL.md本文に記載の通り、これらは実行サンドボックスに用意済みという前提で、通常 `pip install`/`npm install` は不要。別環境に持ち出す場合はこれらの導入が必要。
